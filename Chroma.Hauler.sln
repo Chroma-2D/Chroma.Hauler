@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chroma.Hauler", "Chroma.Hauler\Chroma.Hauler.csproj", "{7DBB323A-9268-4460-A580-AB4890AAA5DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chroma.Hauler.Test", "Chroma.Hauler.Test\Chroma.Hauler.Test.csproj", "{AE568101-F7EF-4691-A85F-E1546CFFE3BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DBB323A-9268-4460-A580-AB4890AAA5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBB323A-9268-4460-A580-AB4890AAA5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBB323A-9268-4460-A580-AB4890AAA5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBB323A-9268-4460-A580-AB4890AAA5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE568101-F7EF-4691-A85F-E1546CFFE3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE568101-F7EF-4691-A85F-E1546CFFE3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE568101-F7EF-4691-A85F-E1546CFFE3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE568101-F7EF-4691-A85F-E1546CFFE3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
