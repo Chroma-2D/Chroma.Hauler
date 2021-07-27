@@ -5,6 +5,8 @@ namespace Chroma.Hauler
 {
     public abstract class VfsObject
     {
+        private string _absolutePath;
+        
         public string Name { get; protected set; }
         public VfsObject Parent { get; protected set; }
 
@@ -12,21 +14,26 @@ namespace Chroma.Hauler
         {
             get
             {
-                var list = new Stack<string>();
-                var current = this;
-
-                while (current.Parent != null)
+                if (_absolutePath == null)
                 {
-                    list.Push(current.Name);
-                    current = current.Parent;
+                    var list = new Stack<string>();
+                    var current = this;
+
+                    while (current.Parent != null)
+                    {
+                        list.Push(current.Name);
+                        current = current.Parent;
+                    }
+
+                    var path = string.Join('/', list);
+
+                    if (this is VfsDirectory && path.Any())
+                        path += '/';
+
+                    _absolutePath = "/" + path;
                 }
-
-                var path = string.Join('/', list);
-
-                if (this is VfsDirectory && path.Any())
-                    path += '/';
-
-                return "/" + path;
+                
+                return _absolutePath;
             }
         }
 
