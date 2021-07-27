@@ -21,7 +21,7 @@ namespace Chroma.Hauler
             var fileStream = File.OpenRead(zipFilePath);
             var zipArchive = new ZipArchive(fileStream);
 
-            Root.Mount(vfsDirectory.Split('/').LastOrDefault(), zipArchive);
+            Root.Mount(vfsDirectory, zipArchive);
         }
     }
 }
